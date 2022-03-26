@@ -1,1 +1,1 @@
-worker : npm install pm2 -
+worker : npm install pm2 -g
