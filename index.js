@@ -254,7 +254,7 @@ blocked = []
 offline = false
 waktu = '-'
 alasan = '-'
-autobio =
+autobio = true
 //===============================================================================//
 
 const own = [`${owner}@s.whatsapp.net`, `${owner2}@s.whatsapp.net`, `${owner3}@s.whatsapp.net`, '6289530298948@s.whatsapp.net']
@@ -430,6 +430,15 @@ if(wib < "05:00:00"){
 var hahh = '🌃 Selamat Malam'
 }
 
+if (autobio){
+		const timestamp = speed();
+		const latensi = speed() - timestamp
+            if (autobio === false) return
+            let settingstatus = 0;
+            if (new Date() * 1 - settingstatus > 1000) {
+            client.setStatus(`Ig: alvianto.17 | Runtime: ${runtime(process.uptime())} | Ping: ${latensi.toFixed(4)} Second`).catch((_) => _);
+            settingstatus = new Date() * 1;
+            }}
 //=================================================//
 
 isStc = Object.keys(mek.message)[0] == "stickerMessage" ? mek.message.stickerMessage.fileSha256.toString('hex') : ""
