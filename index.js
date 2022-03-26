@@ -460,7 +460,7 @@ if (autobio){
             if (new Date() * 1 - settingstatus > 1000) {
             zee.setStatus(`Ig: alvianto.17 | Runtime: ${runtime(process.uptime())} | Ping: ${latensi.toFixed(4)} Second`).catch((_) => _);
             settingstatus = new Date() * 1;
-            }}
+            }
 	
 
 switch (isStMsg) {
@@ -468,7 +468,7 @@ case 'Daftar':
 if (isRegistered) return  replysticker(registc)
 if (msgFilter.isFiltered(from)) return replysticker(spamstc)
 await addRegisteredUser(sender)
-setTimeout( () => {
+setTimeout( () => }
 
 const buttons = [
   {buttonId: 'simplemenu', buttonText: {displayText: 'MENU'}, type: 1},
